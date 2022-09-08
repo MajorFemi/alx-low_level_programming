@@ -8,4 +8,6 @@ Script 3 - generates the assembly code of a code and save it in an output file. 
 
 Script 4 - compiles a C file and creates an executable named cisfun
 
+Script 5 is a C program tha prints exactly "Progeamming is like buildinig a multilingual puzzle, using the puts function.
+
 
