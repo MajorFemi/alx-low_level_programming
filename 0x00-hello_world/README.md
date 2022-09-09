@@ -10,4 +10,6 @@ Script 4 - compiles a C file and creates an executable named cisfun
 
 Script 5 is a C program tha prints exactly "Progeamming is like buildinig a multilingual puzzle, using the puts function.
 
+Script 6 is a program that prints a string using printf function
+
 
