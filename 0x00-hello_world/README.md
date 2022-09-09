@@ -12,4 +12,10 @@ Script 5 is a C program tha prints exactly "Progeamming is like buildinig a mult
 
 Script 6 is a program that prints a string using printf function
 
+Script 7 prints the size of various types
 
+Script 8 generates assembly code (intel syntax) of a C code
+
+Script 9 prints exactly the specified line of code.
+
+The End.
