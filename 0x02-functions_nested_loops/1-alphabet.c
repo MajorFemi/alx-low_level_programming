@@ -5,8 +5,7 @@
  * Description: Prints the alphabets in lowercase
  *
  * Return: 0
- */
-
+*/
 void print_alphabet(void)
 {
 	char lower = 'a';
