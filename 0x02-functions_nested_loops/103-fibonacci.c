@@ -15,13 +15,13 @@ int main(void)
 	while (e < 4000000)
 	{
 		if (e % 2 == 0)
-			total += e;
+			sum += e;
 
 		m = e;
 		e += f;
 		f = m;
 	}
-	printf("%d\n", total);
+	printf("%d\n", sum);
 
 	return (0);
 }
