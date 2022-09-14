@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  * print_sign - print the sign of a number
- * @n: typr int integer, can be negative or positive
+ * @f: typr int integer, can be negative or positive
  * Description: print +, 0, or - depending on number, along with return
  * Return: 1 if +, 0 if 0 and -1 if -
  */
-int print_sign(int n)
+int print_sign(int f)
 {
-	if (n > 0)
+	if (f > 0)
 	{
 		_putchar('+');
 		return (1);
 	}
-	else if (n < 0)
+	else if (f < 0)
 	{
 		_putchar('-');
 		return (-1);

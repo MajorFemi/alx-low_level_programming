@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * _islower - Return 1 if letter is lowercase, 0 if not
- * @c: char type letter
+ * @f: char type letter
  * Return: 1 if lowercase, 0 if not lowercase
  */
-int _islower(int c)
+int _islower(int f)
 {
-	if (c > 96 && c < 123)
+	if (f > 96 && f < 123)
 		return (1);
 	else
 		return (0);
