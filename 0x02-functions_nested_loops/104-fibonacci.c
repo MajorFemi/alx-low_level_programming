@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int hold1, hold2, hold3;
 	int count;
 
-	printf("%lu, %lu ", al1, al2);
+	printf("%lu, %lu, ", al1, al2);
 	for (count = 2; count < 98; count++)
 
 	{
@@ -34,6 +34,6 @@ int main(void)
 		if (count != 97)
 			printf(", ");
 	}
-printf("\n");
+	printf("\n");
 	return (0);
 }
