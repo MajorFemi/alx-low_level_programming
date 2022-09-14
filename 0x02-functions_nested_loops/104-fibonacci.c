@@ -34,6 +34,6 @@ int main(void)
 		if (count != 97)
 			printf(", ");
 	}
-iprintf("\n");
+printf("\n");
 	return (0);
 }
