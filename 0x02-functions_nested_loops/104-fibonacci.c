@@ -20,7 +20,7 @@ int main(void)
 		{
 			hold1 = (al1 + al2) / LARGEST;
 			hold2 = (al1 + al2) % LARGEST;
-			hold3 = fm1 + fm2 + fm3 + hold1;
+			hold3 = fm1 + fm2 + hold1;
 			fm1 = fm2, fm2 = hold3;
 			al1 = al2, al2 = hold2;
 			printf("%lu%010lu", fm2, al2);
@@ -34,6 +34,6 @@ int main(void)
 		if (count != 97)
 			printf(", ");
 	}
-	printf("\n");
+iprintf("\n");
 	return (0);
 }
