@@ -15,23 +15,27 @@ int main(void)
 	int f;
 
 	f = 1;
-	while (f < 101)
+	while (f <= 100)
 	{
 		if (f % 3 == 0 && f % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (f % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if (f % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", f);
+			printf("%d", f);
+		}
+		if (f != 100)
+		{
+			printf(" ");
 		}
 		f++;
 	}
