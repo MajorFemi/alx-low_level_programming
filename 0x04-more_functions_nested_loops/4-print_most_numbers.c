@@ -9,18 +9,12 @@ void print_most_numbers(void)
 {
 	int f;
 
-	f = 0
-
-	while (f < 10)
+	for (f = 0; f < 10; f++)
 	{
 		if (f != '2' && f != '4')
 		{
 			_putchar(f + '0');
 		}
-		f++;
 	}
 	_putchar('\n');
 }
-
-
-
