@@ -7,5 +7,6 @@ int _isdigit(int f);
 int _isdigit(int f);
 int mul(int f, int m);
 void print_numbers(void);
+void print_most_numbers(void);
 
 #endif
