@@ -6,6 +6,7 @@
  * use character # to print the triangle
  * @size: size of triangle
  */
+
 void print_triangle(int size)
 {
 	int f, e, m;
@@ -16,10 +17,10 @@ void print_triangle(int size)
 	{
 		e = size - 1 - f;
 		m = f + 1;
-		while (f > 0)
+		while (e > 0)
 		{
 			_putchar(' ');
-			f--;
+			e--;
 		}
 		while (m > 0)
 		{
@@ -29,6 +30,7 @@ void print_triangle(int size)
 		_putchar('\n');
 		f++;
 	}
+
 	if (size <= 0)
 	{
 		_putchar('\n');
