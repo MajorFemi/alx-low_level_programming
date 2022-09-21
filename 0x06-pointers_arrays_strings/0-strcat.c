@@ -13,23 +13,19 @@
 
 char *_strcat(char *dest, char *src);
 {
-	int f, m;
+	char *fem = dest;
 
-	f = 0;
-
-	while (dest[f] != '\0')
+	while (*dest)
 	{
-		f++;
+		dest++;
 	}
 
-	m = 0;
-
-	while (src[m] != '\0')
+	while (*src)
 	{
-		m++;
+		*dest++ = *src++;
 	}
 
-	dest[m] = '\0';
+	*dest = '\0';
 
-	return (dest);
+	return (fem);
 }
