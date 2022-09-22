@@ -34,6 +34,6 @@ void print_number(int n)
 
 	for (; sum >= 1; sum /= 10)
 	{
-		_putchar(((f / sum) % 10) + 48);
+		_putchar(((f / sum) % 10) + '0');
 	}
 }
