@@ -3,11 +3,10 @@
 /**
  * _strncpy - copies a string
  *
- * Description: There's an existing strncpy but function should
- * work exactly like it
+ * Description: created function works exactly like strncpy
  *
  * @dest: pointer one
- * @src: ponter two
+ * @src: pointer two
  * @n: int type
  *
  * Return: dest
