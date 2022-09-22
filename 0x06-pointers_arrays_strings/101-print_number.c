@@ -23,7 +23,7 @@ void print_number(int n)
 	}
 
 	
-	e = m;
+	e = f;
 	sum = 1;
 
 	while (e > 9)
