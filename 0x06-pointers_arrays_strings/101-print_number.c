@@ -22,10 +22,11 @@ void print_number(int n)
 		f = n;
 	}
 
+	
 	e = m;
 	sum = 1;
 
-	while (e < 9)
+	while (e > 9)
 	{
 		e /= 10;
 		sum *= 10;
