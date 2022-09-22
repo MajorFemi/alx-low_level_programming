@@ -12,41 +12,35 @@ void print_buffer(char *b, int size)
 {
 	int f, e, m;
 
-	f = 0;
-
 	if (size <= 0)
 	{
 		printf("\n");
-		return;
 	}
-	while (f < size)
+	else
 	{
-		e = size - f < 10 ? size - f : 10;
-		printf("%08x: ", f);
-		for (m = 0, m < 10; m++)
+		for (f = 0; f < size; f += 10)
 		{
-			if (m < e)
-				printf("%02x", *(b + f + m));
-			else
-				printf(" ");
-			if (m % 2)
+			printf("%.8x:", f);
+			for (e = f; e < f + 10; e++)
 			{
-				printf(" ");
+				if (e % 2 == 0)
+					printf(" ");
+				if (e < size)
+					printf("%.2x", *(b + e));
+				else
+					printf(" ");
 			}
-		}
-		for (m = 0; m < e; m++)
-		{
-			int d = *(b + f + m);
-
-			if (d < 32 || d > 132)
+			printf(" ");
+			for (m = f; m < f + 10; m++)
 			{
-				d = '.';
+				if (m >= size)
+					break;
+				if (*(b + m) < 32 || *(b + m) > 126)
+					printf("%c", '.');
+				else
+					printf("%c", *(b + m));
 			}
-			printf("%c", d);
+			printf("\n");
 		}
-		printf("\n");
-		f += 10;
 	}
 }
-
-
