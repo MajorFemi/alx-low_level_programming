@@ -10,25 +10,24 @@
 
 char *rot13(char *f)
 {
-	int s = 0;
+	int s, k;
 
-	while (f[s] != '\0')
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char cipher[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+
+	for (s = 0; f[s] != '\0'; s++)
 	{
-		while ((f[s] >= 97 && f[s] <= 122) ||
-				(f[s] >= 65 && f[s] <= 90))
+		for (k = 0; alphabet[k] != '\0'; k++)
 		{
-			if ((f[s] >= 97 && f[s] <= 109) ||
-					(f[s] >= 65 && f[s] <= 77))
+			if (f[s] == alphabet[k])
 			{
-				f[s] += 13;
+				f[s] += cipher[k];
+				break
 			}
-			else
-			{
-				f[s] -= 13;
-			}
-			s++;
 		}
-		s++;
+
 	}
+
 	return (f);
 }
