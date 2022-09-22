@@ -9,6 +9,6 @@ int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 char *string_toupper(char *f);
 char *cap_string(char *f);
-
+int check_separators(char d);int check_separators(char d);
 
 #endif
