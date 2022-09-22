@@ -9,44 +9,39 @@
 
 char *cap_string(char *f)
 {
-	int a = 0;
+	int a, d;
+	int activate;
+	char separators[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	while (f[a])
+	for (a = 0, activate = 0; f[a] != '\0'; a++)
 	{
-		if (a == 0 && (f[a] >= 97 && f[a] <= 122))
+		if (f[0] >= 97 && f[0] <= 122)
 		{
-			f[a] -= 32;
+			activate = 1;
 		}
-
-		if (check_separators(f[a]) && (f[a + 1] >= 97 && f[a + 1] <= 122))
+		for (d = 0; separators[d] != '\0'; d++)
 		{
-			f[a + 1] -= 32;
+			if (separators[d] == f[a])
+			{
+				activate = 1;
+			}
 		}
-		a++;
+		if (activate)
+		{
+			if (f[a] >= 97 && f[a] <= 122)
+			{
+				f[a] -= 32;
+				activate = 0;
+			}
+			else if (f[a] >= 65 && f[a] <= 90)
+			{
+				activate = 0;
+			}
+			else if (f[a] >= 48 && f[a] <= 57)
+			{
+				activate = 0;
+			}
+		}
 	}
 	return (f);
-}
-
-/**
- * check_separators - separators of words; space tabulation, etc
- *
- * @d: an input character
- * Return: 1 if separator, 0 otherwise
- */
-
-int check_separators(char d)
-{
-	int a = 0;
-
-	char separators[13] = { ' ', '\t', '\n', ',', ':', '.', '!',
-		'?', '"', '(', ')', '{', '}', };
-
-	for (; a < 13; a++)
-	{
-		if (c == separators[a])
-		{
-			return (1);
-		}
-	}
-	return (0)
 }
