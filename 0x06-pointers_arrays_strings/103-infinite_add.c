@@ -21,7 +21,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (g >= h)
 		e = g;
 	else
-		e = h
+		e = h;
 	if (size_r <= e + 1)
 		return (0);
 	r[e + 1] = '\0';
