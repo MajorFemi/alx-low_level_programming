@@ -23,7 +23,7 @@ char *rot13(char *f)
 			if (f[s] == alphabet[k])
 			{
 				f[s] += cipher[k];
-				break
+				break;
 			}
 		}
 
