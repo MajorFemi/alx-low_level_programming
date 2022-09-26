@@ -5,7 +5,7 @@
  * @dest: final memory area
  * @src: initial memory area
  * @n: number of byte
- * Return: a pointer to final memory area
+ * Return: a pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -14,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	for (f = 0; f < n; f++)
 	{
-		dest[f] = src[n];
+		dest[f] = src[f];
 	}
 
 	return (dest);
