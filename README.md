@@ -8,4 +8,4 @@ The Repository 0x05-pointers_arrays_strings aims at improving knowledge on point
 
 The Repository 0x06-pointers_arrays_strings aims at giving further clarity and in-depth knowledge on pointers, array and strings.
 
-
+The Repository 0x07-pointers_array_strings aims to explain further pointers (Double Pointers), Array (2D array, MutiDimensional array) and strings.
