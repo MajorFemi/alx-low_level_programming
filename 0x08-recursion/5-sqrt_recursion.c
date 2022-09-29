@@ -28,9 +28,9 @@ int _sqrtfinder(int f, int m)
 	{
 		return (m);
 	}
-	else if (square < m)
+	else if (square < f)
 	{
-		return (_sqrtfinder(m, f + 1));
+		return (_sqrtfinder(f, m + 1));
 	}
 	else
 		return (-1);
