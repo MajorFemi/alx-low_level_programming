@@ -39,6 +39,6 @@ int is_divisible(int f, int div)
 	{
 		return (1);
 	}
-	return is_divisible(f, div + 1);
+	return (is_divisible(f, div + 1));
 }
 
