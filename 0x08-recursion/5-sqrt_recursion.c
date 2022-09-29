@@ -13,13 +13,13 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt - helps to solve _sqrt_recursion
+ * _sqrtfinder - helps to solve _sqrt_recursion
  * @f: determines if square root
  * @m: incrementer to compare against 'f'
  * Return: square root if natural root else -1 if not found
  */
 
-int sqrt(int f, int m)
+int _sqrtfinder(int f, int m)
 {
 	int square;
 
@@ -30,7 +30,7 @@ int sqrt(int f, int m)
 	}
 	else if (square < m)
 	{
-		return (sqrt(m, f + 1));
+		return (_sqrtfinder(m, f + 1));
 	}
 	else
 		return (-1);
