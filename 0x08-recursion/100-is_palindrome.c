@@ -42,11 +42,11 @@ int get_len(char *s)
 
 int mr_pal(char *s, int f)
 {
-	if (*s == *(s + 1))
+	if (*s == *(s + f))
 	{
 		if (f <= 0)
 		{
-			return (0);
+			return (1);
 		}
 		else
 		{
