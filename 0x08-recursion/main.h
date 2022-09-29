@@ -7,4 +7,4 @@ int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int _sqrtfinder(int f, int m);
 int _is_prime_number(int n);
-int _is_divisible(int f, int div);
+int is_divisible(int f, int div);
