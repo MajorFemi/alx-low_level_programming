@@ -10,4 +10,8 @@ The Repository 0x06-pointers_arrays_strings aims at giving further clarity and i
 
 The Repository 0x07-pointers_array_strings aims to explain further pointers (Double Pointers), Array (2D array, MutiDimensional array) and strings.
 
-The Repository 0x08-recursion aims at showcasing the importance or usefulness of recursion.
+The Repository 0x08-recursion aims at showcasing the importance or usefulness of recursion
+
+The Repository 0x0A-argc_argv aims at explaining argument count (argc) and argument vector (argv)
+
+.
