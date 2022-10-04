@@ -14,4 +14,4 @@ The Repository 0x08-recursion aims at showcasing the importance or usefulness of
 
 The Repository 0x0A-argc_argv aims at explaining argument count (argc) and argument vector (argv)
 
-.
+The Repository 0x0B-malloc_free explains or help to understand memory allocation, free, etc.
