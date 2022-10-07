@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 	{
 		num1 = f1[l1] - '0';
 		c = 0;
-		for (l2 = _strlen(f2) - 1, l2 >= 0; l2--)
+		for (l2 = _strlen(f2) - 1; l2 >= 0; l2--)
 		{
 			num2 = f2[l2] - '0';
 			c += res[l1 + l2 + 1] + (num1 * num2);
