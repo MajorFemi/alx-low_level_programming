@@ -1,6 +1,6 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
  * is_number - checks if it contains non-digit
@@ -8,7 +8,7 @@
  * Return: 0 if non-digit else 1
  */
 
-int is_number(char f)
+int is_number(char *f)
 {
 	int m = 0;
 
@@ -80,13 +80,13 @@ int main(int argc, char *argv[])
 		{
 			num2 = f2[l2] - '0';
 			c += res[l1 + l2 + 1] + (num1 * num2);
-			result[l1 + l2 + 1] = c % 10;
+			res[l1 + l2 + 1] = c % 10;
 			c /= 10;
 		}
 		if (c > 0)
 			res[l1 + l2 + 1] += c;
 	}
-	for (e = 0; e < len - 1; e++)
+	for (e = 0; e < l - 1; e++)
 	{
 		if (res[e])
 			a = 1;
