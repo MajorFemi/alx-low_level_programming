@@ -16,4 +16,6 @@ The Repository 0x0A-argc_argv aims at explaining argument count (argc) and argum
 
 The Repository 0x0B-malloc_free explains or help to understand memory allocation, free, etc.
 
-The Directory 0x0C-more_malloc_free dig deep into malloc.
+The Directory 0x0C-more_malloc_free dig deep into malloc
+The Directory 0x0D-preprocessor aims at explaining everthing about preprocessor, macros etc.
+.
