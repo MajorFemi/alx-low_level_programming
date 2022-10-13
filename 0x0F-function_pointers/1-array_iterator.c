@@ -3,7 +3,7 @@
 /**
  * array_iterator - executes a function
  * @array: input array
- * @sie: number of elements
+ * @size: number of elements
  * @action: action to be exectured on each element
  */
 
