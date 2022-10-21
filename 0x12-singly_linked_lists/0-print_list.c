@@ -9,17 +9,18 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *present;
-	size_t f;
+	unsigned int nodes = 0;
 
-	f = 0;
-	present = h;
-	while (present != NULL)
+	while (h)
 	{
-		printf("[%d] %s\n", present->len, present->str);
-		present = present->next;
-		f++;
-	}
+		printf("[%u] ", h->len);
+		if (h->str == NULL)
+			printf("(nil)\n");
+		else
+			printf("%s\n", h->str);
 
-	return (f);
+		h = h->next;
+		nodes++;
+	}
+	return (nodes);
 }
