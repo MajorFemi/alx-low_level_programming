@@ -15,7 +15,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	tempy = malloc(sizeof(list_t));
 	if (tempy == NULL)
-		return NULL;
+		return (NULL);
 
 	while (str[length])
 		length++;
