@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_list = frees all elements in linked list
+ * free_list - frees all elements in linked list
  * @head: head
  * Return: void
  */
@@ -18,5 +18,5 @@ void free_list(list_t *head)
 		free(tempy->str);
 		free(tempy);
 	}
-	return (head);
+	free(head);
 }
