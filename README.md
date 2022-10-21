@@ -21,3 +21,5 @@ The Directory 0x0D-preprocessor aims at explaining everthing about preprocessor,
 The Directory 0x0E-structures_typedef increase existing knowledge about struct, typedef.
 
 The Directory 0x0F-function_pointers further displays pointer to a function as we've previously learnt about double pointer and pointers
+
+The Directory 0x12-singly-linked_lists is a sub concept under DATA Structure
