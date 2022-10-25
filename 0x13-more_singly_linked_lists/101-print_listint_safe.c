@@ -19,7 +19,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		print = tempy;
 		tempy = tempy->next;
-		nodes;
+		nodes++;
 		printf("[%p] %d\n", (void *)print, print->n);
 
 
