@@ -22,4 +22,6 @@ The Directory 0x0E-structures_typedef increase existing knowledge about struct, 
 
 The Directory 0x0F-function_pointers further displays pointer to a function as we've previously learnt about double pointer and pointers
 
-The Directory 0x12-singly-linked_lists is a sub concept under DATA Structure
+The Directory 0x12-singly-linked_lists is a sub concept under DATA Structure.
+
+0x013-more_singly_linked_lists is to further widen the existing knowledge on linked list.
