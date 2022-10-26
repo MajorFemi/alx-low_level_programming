@@ -9,20 +9,32 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *tempy, *allow;
 	size_t nodes = 0;
+	int diff;
+	listint_t *tempy;
 
-	tempy = *h;
-	while (tempy != NULL)
+	if (!h || !*h)
+		return (0);
+
+	while (*h)
 	{
-		nodes++;
-		allow = tempy;
-		tempy = tempy->next;
-		free(allow);
-
-		if (allow < tempy)
+		diff = *h - (*h)->next;
+		if (diff > 0)
+		{
+			tempy = (*h)->next;
+			free(*h);
+			*h = tempy;
+			nodes++;
+		}
+		else
+		{
+			free(*h);
+			*h = NULL;
+			nodes++;
 			break;
+		}
 	}
+
 	*h = NULL;
 
 	return (nodes);
