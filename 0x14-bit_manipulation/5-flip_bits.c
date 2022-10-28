@@ -11,7 +11,7 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int f, nflips = 0;
-	unsigned int e = sizeof(unsigned long int) * 8;
+	unsigned long int e = sizeof(unsigned long int) * 8;
 
 	for (f = 0; f < e; f++)
 	{
@@ -22,5 +22,3 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	}
 	return (nflips);
 }
-
-
