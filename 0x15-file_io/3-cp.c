@@ -1,6 +1,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/uio.h>
+#include <unistd.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +9,7 @@
 int safe_close(int);
 
 /**
- * main - Mian function to copy files
+ * main - Main function to copy files
  * @argc: number of args
  * @argv: pointers to array args
  * Return: 1 on success otherwise exits
