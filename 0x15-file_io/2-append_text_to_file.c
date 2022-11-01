@@ -8,8 +8,8 @@
  * append_text_to_file - appends text at the end
  * @filename: filename to open and append
  * @text_content: NULL terminated string to add
- * Return: 1 on sucess, -1 if the file can not be created, written
- * nor fails
+ * Return: 1 on success, -1 if the file can not be created,
+ * written, nor fails
  */
 
 int append_text_to_file(const char *filename, char *text_content)
@@ -28,7 +28,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	while (*text_content + len)
+	while (*(text_content + len))
 		len++;
 
 	fdwr = write(fdop, text_content, len);
