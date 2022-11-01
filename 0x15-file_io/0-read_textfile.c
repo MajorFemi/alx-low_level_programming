@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	fdr = read(fdop, temp, letters);
+	fdre = read(fdop, temp, letters);
 	if (fdre < 0)
 	{
 		free(temp);
