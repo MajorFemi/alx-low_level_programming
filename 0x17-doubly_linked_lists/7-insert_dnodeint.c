@@ -7,7 +7,6 @@
  * @n: value to store in new node
  * Return: Address of new node, or NULL if failed
  */
-
 dlistint_t *insert_dnodeint_at_idx(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int c;
@@ -21,8 +20,7 @@ dlistint_t *insert_dnodeint_at_idx(dlistint_t **h, unsigned int idx, int n)
 		prev = temp;
 	if (idx == 0)
 	{
-		*h = new;
-		new->prev = NULL;
+		*h = new; new->prev = NULL;
 		new->next = (temp == NULL) ? NULL : temp;
 		return (new);
 	}
@@ -30,7 +28,7 @@ dlistint_t *insert_dnodeint_at_idx(dlistint_t **h, unsigned int idx, int n)
 	{
 		prev = *h;
 		temp = ((*h)->next == NULL) ? NULL : (*h)->next;
-		new->prev = prev, new->next = temp, prev->next = new;
+		new->prev = prev; new->next = temp; prev->next = new;
 		if (temp)
 			temp->prev = new;
 		return (new);
@@ -38,15 +36,17 @@ dlistint_t *insert_dnodeint_at_idx(dlistint_t **h, unsigned int idx, int n)
 	if (idx == c && temp == NULL)
 	{
 		if (prev != NULL)
-			new->prev = prev, new->next = NULL, prev->next = new;
-			return (new);
-		free(new);
-		return (NULL);
+		{
+			new->prev = prev; new->next = NULL;
+			prev->next = new; return (new);
+		}
+		free(new); return (NULL);
 	}
 	else if (idx != c && temp == NULL)
-		free(new);
-		return (NULL);
-	prev = temp, temp = temp->next, new->prev = prev;
-	new->next = temp, prev->next = new, temp->prev = new;
+	{
+		free(new); return (NULL);
+	}
+	prev = temp; temp = temp->next; new->prev = prev;
+	new->next = temp; prev->next = new; temp->prev = new;
 	return (new);
 }
