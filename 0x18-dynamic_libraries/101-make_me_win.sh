@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp/ https://raw.github.com/MajorFemi/alx-low_level_programming/master/0x18-dynamic_libraries/cheat.so
-export LD_PRELOAD=/tmp/cheat.so
+wget -P /tmp/ https://raw.github.com/MajorFemi/alx-low_level_programming/master/0x18-dynamic_libraries/libwincheat.so
+export LD_PRELOAD=/tmp/libwincheat.so
