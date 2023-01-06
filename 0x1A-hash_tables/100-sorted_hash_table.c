@@ -113,7 +113,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			ht->stail = new;
 		else
 			tmp->snext->sprev = new;
-			tmp->snext = new;
+		tmp->snext = new;
 	}
 	return (1);
 }
