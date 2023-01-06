@@ -23,7 +23,7 @@ void hash_table_delete(hash_table_t *ht)
 				node = ht->array[i];
 				while (node)
 				{
-					next_node = node->next
+					next_node = node->next;
 					if (node->value)
 						free(node->value);
 					if (node->key)
